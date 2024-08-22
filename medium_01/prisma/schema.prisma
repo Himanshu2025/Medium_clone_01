@@ -1,0 +1,29 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Creating a user schema 
+model User {
+  id        Int   @id @default(autoincrement())
+  name      String
+  username  String @unique
+  password  String
+  blogs      Blog[]
+}
+
+// Creating a Blog schema 
+model Blog {
+  id        Int @id @default(autoincrement())
+  authorId  Int
+  content   String 
+  title     String
+  published Boolean @default(false)
+  // Realtion between the blog posts and the user
+  author User @relation(fields: [authorId], references: [id])
+}

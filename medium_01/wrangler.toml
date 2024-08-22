@@ -2,20 +2,4 @@ name = "medium_01"
 compatibility_date = "2024-08-21"
 
 # [vars]
-# MY_VAR = "my-variable"
-
-# [[kv_namespaces]]
-# binding = "MY_KV_NAMESPACE"
-# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-
-# [[r2_buckets]]
-# binding = "MY_BUCKET"
-# bucket_name = "my-bucket"
-
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "my-database"
-# database_id = ""
-
-# [ai]
-# binding = "AI"
+DATABASE_URL = "DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiZDk0M2Q3MjQtZWQyZi00NTQwLThlNzMtMzFmZGFlNWNiZDdjIiwidGVuYW50X2lkIjoiZjY3OGZjMjM0OTU1YzE4Yzg3NWU2Mzk1MTg2ZTNiYmQyZDM0OWFkZjAxNDMwNGViYTExY2E3NWRmNTM1MjZjZiIsImludGVybmFsX3NlY3JldCI6IjgwYzZjMDVlLTI0OTktNDc1YS1iNjJkLTk3YjEyNmE5ZTE1ZiJ9.EWmHiXkZHWWGaoTLu2a7pnSKbUQrN-NshT1fWbHZW80""
